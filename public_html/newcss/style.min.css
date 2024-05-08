@@ -188,16 +188,16 @@ header li {
   padding: 15px 0 15px 65px;
 }
 .adviser {
-  background: url(../icons/best-travel-adviser.webp) no-repeat left center;
+  background: url(../webicons/best-travel-adviser.webp) no-repeat left center;
 }
 .easy {
-  background: url(../icons/easy-booking.webp) no-repeat left center;
+  background: url(../webicons/easy-booking.webp) no-repeat left center;
 }
 .deals {
-  background: url(../icons/best-deals.webp) no-repeat left center;
+  background: url(../webicons/best-deals.webp) no-repeat left center;
 }
 .support {
-  background: url(../icons/support.webp) no-repeat left center;
+  background: url(../webicons/support.webp) no-repeat left center;
 }
 .benefits-box small {
   font-size: 12px;
