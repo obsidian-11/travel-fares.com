@@ -72,12 +72,12 @@
           <div class="col-lg-4 col-md-2 col-sm-12 mb-4">
             <h3 class="h6">Quick Links</h3>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">About us</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="cancellation.html">Cancellation Policy</a></li>
-              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="about">About us</a></li>
+              <li><a href="contact">Contact Us</a></li>
+              <li><a href="privacy">Privacy Policy</a></li>
+              <li><a href="cancellation">Cancellation Policy</a></li>
+              <li><a href="terms">Terms &amp; Conditions</a></li>
               <!--<li><a href="sitemap.php">Sitemap</a></li>-->
             </ul>
           </div>

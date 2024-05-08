@@ -286,7 +286,7 @@
                   latest technology, Travel-fares.com excels in trip planning.
                 </p>
                 <div id="read-more-btn">
-                  <a href="about-us.html"> Read More </a>
+                <a href="about"> Read More </a>
                 </div>
               </div>
             </div>
