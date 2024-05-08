@@ -71,7 +71,6 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
-
     <link rel="stylesheet" href="newcss/refactor.css">
   </head>
 
@@ -107,8 +106,17 @@
             <li class="nav-item">
               <a class="nav-link" href="about">About us</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item tours-dropdown-container">
               <a class="nav-link" href="#">Tour Packages </a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="/tours-georgia">Georgia</a></li>
+                  <li><a href="/tours-bali">Bali</a></li>
+                  <li><a href="/tours-dubai">Dubai</a></li>
+                  <li><a href="/tours-singapore">Singapore</a></li>
+                  <li><a href="/tours-thailand">Thailand</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact">Contact us</a>
@@ -140,3 +148,4 @@
         </div>
       </nav>
     </header>
+
