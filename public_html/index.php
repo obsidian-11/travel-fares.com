@@ -1,4 +1,13 @@
-<?php require('fragments/header.php');
+<?php 
+require('fragments/header.php');
+$tours_file = file_get_contents('data/tour-packages.json');
+$tours = json_decode($tours_file);
+
+$filtered_countries = array_filter($tours->countries, function($country) {
+  return $country->slug == "/tours-georgia" ;
+});
+
+$featured = array_values($filtered_countries)[0]->packages[1]
  ?>
     <div class="banner">
       <!-- search engine starts here -->
@@ -14,19 +23,22 @@
                   <div class="tfc-photo"></div>
 
                   <div class="tfc-content">
-                    <h3>Tbilisi Explorer</h3>
-                    <p>5 Days</p>
-                    <h1>$800</h1>
+                    <h3><?php echo $featured->name ?></h3>
+                    <p><?php echo count($featured->itinerary) ?> Days</p>
+                    <h1><?php echo $featured->cost ?></h1>
                     <p>per person</p>
                   </div>
 
-                  <button
+
+                <a href="/tours-georgia">
+                <button
                     name="submit-form"
                     type="submit"
                     class="btn-cta btn-color btn-search w-100 rounded searc"
                   >
                     Explore More
                   </button>
+                </a>
                 </div>
               </div>
 
