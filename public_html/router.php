@@ -15,6 +15,13 @@ $routes = [
     'info' => 'pages/info.php',
     'privacy' => 'pages/privacy.php',
     'terms' => 'pages/terms.php',
+    'georgia-tour-packages' => 'pages/georgia-tours.php',
+    'tours-georgia' => 'pages/tours.php',
+    'tours-bali' => 'pages/tours.php',
+    'tours-turkey' => 'pages/tours.php',
+    'tours-singapore' => 'pages/tours.php',
+    'tours-thailand' => 'pages/tours.php',
+    'tours-dubai' => 'pages/tours.php',
     'post' => 'sendemail.php',
 ];
 

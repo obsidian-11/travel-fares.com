@@ -71,111 +71,11 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <style>
-      .modal-body {
-        padding: 0px;
-        width: 630px;
-      }
-      #call-sec {
-        padding: 12px 0px;
-        text-align: center;
-        display: none;
-        background: #e91e63;
-      }
-      #call-sec span {
-        font-size: 17px;
-        font-weight: 600;
-      }
-      @media only screen and (max-width: 768px) {
-        #call-sec {
-          display: none !important;
-        }
-        header {
-          padding: 0px 0px !important;
-          text-align: center;
-        }
-        .ps-2 {
-          padding-left: 6rem !important;
-        }
-      }
-      
-      nav ul li a {
-        color: #000 !important;
-        border-bottom: 2px solid #ffffff !important;
-        text-transform: uppercase !important;
-      }
-      header {
-        background: #ffffff;
-      }
-      .navbar-nav {
-        margin-left: 18%;
-      }
-      .content-text .row {
-        display: none;
-      }
-      .pop {
-        display: none !important;
-      }
-      .form-control-w-border:focus {
-        border: 1px solid #3264ff;
-      }
-      .hide {
-        display: none;
-      }
-      #contact-form > form > div {
-        margin-top: 1rem;
-      }
-      #read-more-btn {
-        margin-top: 2.5em;
-      }
-      #read-more-btn a {
-        color: #fff;
-        padding: 1rem 2rem;
-        background: #ff4600;
-        border-radius: 5px;
-      }
-      .tour-feature-card {
-        background-color: #061937;
-        border-radius: 5px;
-        color: #fff;
-        position: relative;
-        padding: 1rem;
-      }
 
-      .tfc-photo {
-        background-image: url("img/tour-feature-card.jpg");
-        background-size: cover;
-        background-position: top;
-        width: 100%;
-        height: 200px;
-        border-radius: 5px;
-      }
-
-      .tour-feature-card * {
-        color: white;
-      }
-
-      .tour-feature-card .tfc-content {
-        padding-top: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="newcss/refactor.css">
   </head>
 
   <body>
-    <section id="call-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <a href="tel:+1-888-814-6264" style="color: #fff">
-              <span
-                ><img src="img/phones.png" style="width: 30px" /> Call Us:-
-                +1-888-814-6264</span
-              >
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-dark pb-0 pt-0 ps-2 pe-2 ps-lg-0 pe-lg-0"
