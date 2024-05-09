@@ -29,21 +29,18 @@ function sendFormDataOnEmail() {
         <head>
             <meta charset="UTF-8">
             <title>Email Template</title>
-            <style>
-                /* Add your custom styles here */
-            </style>
-        </head>
-        <body>
-            <h1>Submission Details</h1>
-            <p><strong>Selected Tour Package:</strong> '.$tourPackage.'</p>
-            <p><strong>Name:</strong> '.$name.'</p>
-            <p><strong>Email:</strong> '.$email.'</p>
-            <p><strong>Nationality:</strong> '.$nationality.'</p>
-            <p><strong>Country of Residence:</strong> '.$countryOfResidence.'</p>
-            <p><strong>Phone:</strong> '.$phone.'</p>
-            <p><strong>Travellers:</strong> '.$travellers.'</p>
-            <p><strong>Travel Date:</strong> '.$travelDate.'</p>
-        </body>
+            </head>
+            <body>
+                <h1>Submission Details</h1>
+                <p><strong>Selected Tour Package:</strong> '.$tourPackage.'</p>
+                <p><strong>Name:</strong> '.$name.'</p>
+                <p><strong>Email:</strong> '.$email.'</p>
+                <p><strong>Nationality:</strong> '.$nationality.'</p>
+                <p><strong>Country of Residence:</strong> '.$countryOfResidence.'</p>
+                <p><strong>Phone:</strong> '.$phone.'</p>
+                <p><strong>Travellers:</strong> '.$travellers.'</p>
+                <p><strong>Travel Date:</strong> '.$travelDate.'</p>
+            </body>
         </html>
       ';
     }
