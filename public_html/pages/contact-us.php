@@ -80,7 +80,7 @@
                     <input
                       class="form-control form-control-w-border"
                       type="text"
-                      name="field-name"
+                      name="contact-name"
                       placeholder=""
                       required=""
                       value=""
@@ -94,7 +94,7 @@
                   <div class="field-inner">
                     <input
                       type="email"
-                      name="field-name"
+                      name="contact-email"
                       placeholder=""
                       required=""
                       value=""
@@ -112,7 +112,7 @@
                     <select
                       id="form-nationality-select"
                       class="form-control form-control-w-border"
-                      name="field-name"
+                      name="contact-nationality"
                     >
                       <option value="Afghanistan">Afghanistan</option>
                       <option value="Albania">Albania</option>
@@ -438,7 +438,7 @@
                       <select
                         id="input-countryCode"
                         class="form-control form-control-w-border"
-                        name="field-name"
+                        name="contact-countryCode"
                       >
                         <option data-countryCode="DZ" value="213">
                           Algeria (+213)
@@ -1094,7 +1094,7 @@
                       <input
                         type="tel"
                         maxlength="15"
-                        name="field-name"
+                        name="contact-phone"
                         placeholder=""
                         required=""
                         value=""
@@ -1111,6 +1111,7 @@
                   </div>
                   <div>
                     <textarea
+                      name="contact-message"
                       class="field-inner form-control form-control-w-border"
                       id="input-message"
                     ></textarea>
