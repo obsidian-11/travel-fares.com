@@ -1,0 +1,11 @@
+{
+  "config": {
+    "process-timeout": 600,
+    "pre-install-cmd": [
+      "php -d curl.cainfo=\"/etc/ssl/certs/ca-certificates.crt\" composer config -- global process-timeout 600"
+    ]
+  },
+  "require": {
+    "phpmailer/phpmailer": "^6.9.1"
+  }
+}

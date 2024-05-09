@@ -8,6 +8,7 @@
         return $country->slug == $slug;
     });
 
+
 ?>
 
 
@@ -68,7 +69,7 @@ Tour Packages
 
 <div id="booking-form" class="hide" >
     <div class="flex-row-space-between align-center">
-        <h1 id="booking-heading">Tour Package Name</h1>
+        <h1 id="tour-booking-heading">Tour Package Name</h1>
        <a onclick="toggleBookingForm(null)" href="javascript:;">
        <svg  xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none">
             <path d="M16 8L8 16M8.00001 8L16 16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,7 +87,7 @@ Tour Packages
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
                                 </svg>
                             </span>
-                            <input type="text" class="form-control ps-5 pes-txt" placeholder="1 Traveler, 0 Adults, 0 Child">
+                            <input id="tourBooking-travellers" type="text" class="form-control ps-5 pes-txt" placeholder="1 Traveler, 0 Adults, 0 Child">
                         </div>
 
                         <div class="pess-pop bg-white shadow position-absolute p-3 box_px pop-box" style="display: none;">
@@ -220,7 +221,7 @@ Tour Packages
                                     <path d="M4.51589 1.83614H8.79411V0.688554C8.79411 0.308415 9.112 0 9.50714 0C9.90228 0 10.2202 0.308415 10.2202 0.688554V1.83614H11.4086C12.4573 1.83614 13.31 2.6581 13.31 3.67229V12.853C13.31 13.8658 12.4573 14.6891 11.4086 14.6891H1.90143C0.851186 14.6891 0 13.8658 0 12.853V3.67229C0 2.6581 0.851186 1.83614 1.90143 1.83614H3.08982V0.688554C3.08982 0.308415 3.40772 0 3.80286 0C4.198 0 4.51589 0.308415 4.51589 0.688554V1.83614ZM1.42607 12.853C1.42607 13.1055 1.63879 13.312 1.90143 13.312H11.4086C11.67 13.312 11.8839 13.1055 11.8839 12.853V5.50843H1.42607V12.853Z" fill="#006EE3"></path>
                                 </svg>
                             </span>
-                            <input style="padding-left:3rem;" type="text" name="daterange" placeholder="DD MM YYYY" class="form-control form-control-w-border bg-white" id="daterange" autocomplete="off" readonly="">
+                            <input style="padding-left:3rem;" type="text" name="daterange" placeholder="DD MM YYYY" class="form-control form-control-w-border bg-white travelBooking-travelDate" id="daterange" autocomplete="off" readonly="">
                         </div>
                     </div>
                 </div>
@@ -235,7 +236,7 @@ Tour Packages
                       placeholder=""
                       required=""
                       value=""
-                      id="input-name"
+                      id="tourBooking-name"
                     />
                   </div>
                 </div>
@@ -250,7 +251,7 @@ Tour Packages
                       placeholder=""
                       required=""
                       value=""
-                      id="input-email"
+                      id="tourBooking-email"
                       class="form-control form-control-w-border"
                     />
                   </div>
@@ -263,7 +264,7 @@ Tour Packages
                   </div>
                   <div class="field-inner">
                     <select
-                      id="form-nationality-select"
+                      id="tourBooking-nationality-select"
                       class="form-control form-control-w-border"
                       name="booking-nationality"
                     >
@@ -588,7 +589,7 @@ Tour Packages
                   </div>
                   <div class="field-inner">
                     <select
-                      id="form-residence-select"
+                      id="tourBooking-countryOfResidence-select"
                       class="form-control form-control-w-border"
                       name="booking-countryOfResidence"
                     >
@@ -917,7 +918,7 @@ Tour Packages
                     </div>
                     <div class="field-inner">
                       <select
-                        id="input-countryCode"
+                        id="tourBooking-countryCode-select"
                         class="form-control form-control-w-border"
                         name="booking-countryCode"
                       >
@@ -1579,7 +1580,7 @@ Tour Packages
                         placeholder=""
                         required=""
                         value=""
-                        id="input-phone"
+                        id="tourBooking-phone"
                         class="form-control form-control-w-border"
                       />
                     </div>
@@ -1588,7 +1589,7 @@ Tour Packages
 
                 <div class="form-group mt-3">
                   <button
-                    id="inquiry-form-submit-btn"
+                    id="tour-booking-form-submit-btn"
                     type="submit"
                     class="btn btn-search rounded"
                   >
@@ -1603,7 +1604,14 @@ Tour Packages
     const body = document.querySelector("body")
     const bookingFormPopup = document.querySelector("#booking-form")
     const overlay = document.querySelector("#body-overlay");
-    const heading = document.querySelector("#booking-heading")
+    const heading = document.querySelector("#tour-booking-heading")
+
+//     const submitBtn = document.querySelector("#tour-booking-form-submit-btn")
+
+//     submitBtn.addEventListener(("click"), (e) => {
+// e.preventDefault();
+// console.log("yo yo")
+//     })
 
    const toggleVisibility = (id) => {
     const itinerary = tours[id-1].querySelector('.itinerary');
@@ -1637,3 +1645,5 @@ Tour Packages
 
 
 </script>
+
+<script src="js/tourFormSubmit.js"></script>
