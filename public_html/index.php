@@ -45,7 +45,7 @@ $featured = array_values($filtered_countries)[0]->packages[1]
               <div class="col-md-7 col-12">
                 <div class="content-text text-white">
                   <h2 class="text-white">
-                    Book Cheap Flights Tickets & Save More!
+                  Plan Your Escape: <br />Find The Perfect Tour Package For Your Next Vacation.
                   </h2>
                   <br />
 
@@ -157,20 +157,18 @@ $featured = array_values($filtered_countries)[0]->packages[1]
 
             <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
               <div class="benefits-box easy">
-                <h6 class="mb-0">Easy Booking</h6>
+                <h6 class="mb-0">Easy Online Booking</h6>
                 <small
-                  >We have an advanced search engine yet extremely simflified
-                  and user-friendly booking process.</small
+                  >We have an advanced yet extremely simplified and user-friendly online booking process.</small
                 >
               </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
               <div class="benefits-box deals">
-                <h6 class="mb-0">Best Deals</h6>
+                <h6 class="mb-0">Best Service Provider</h6>
                 <small
-                  >Choose from a plethora of deals or discounts, and book
-                  tickets at an extremely affordable prices.</small
+                  >With our team of dedicated tour guides, we deliver exceptional tour packages, ensuring an unforgettable travel experience.</small
                 >
               </div>
             </div>
@@ -179,15 +177,14 @@ $featured = array_values($filtered_countries)[0]->packages[1]
               <div class="benefits-box support">
                 <h6 class="mb-0">Customer Care Service</h6>
                 <small
-                  >Get round the clock assistance for all queries related to
-                  travel bookings and reservations</small
+                  >Get round-the-clock assistance for all queries related to travel bookings and reservations.</small
                 >
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-light-bl mt-5 pt-5 pb-5">
+        <div class="bg-light-bl mt-3 pt-5 pb-5">
           <div class="container">
             <div class="row">
               <div class="col-sm-12">
@@ -198,81 +195,100 @@ $featured = array_values($filtered_countries)[0]->packages[1]
 
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-                    <a href="flights-to-new-york.html">
+                    <a href="/tours-georgia">
                       <div
                         class="popular-dest-box rounded"
                         style="
-                          background: url(newimages/thumb_204x204/new-york-sm.webp)
+                          background: url(newimages/georgia-d.jpg)
                             no-repeat center;
                           height: 230px;
                           background-size: cover;
                         "
                       >
-                        <span>New York</span>
+                        <span>Georgia</span>
                       </div>
                     </a>
                   </div>
 
                   <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-                    <a href="flights-to-atlanta.html">
+                    <a href="/tours-thailand">
                       <div
                         class="popular-dest-box rounded"
                         style="
-                          background: url(newimages/thumb_204x204/atlanta-sm.webp)
+                          background: url(newimages/thailand-d.jpg)
                             no-repeat center;
                           height: 230px;
                           background-size: cover;
                         "
                       >
-                        <span>Atlanta</span>
+                        <span>Thailand</span>
                       </div>
                     </a>
                   </div>
 
                   <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-                    <a href="flights-to-san-francisco.html">
+                    <a href="/tours-dubai">
                       <div
                         class="popular-dest-box rounded"
                         style="
-                          background: url(newimages/thumb_204x204/san-francisco-sm.webp)
+                          background: url(newimages/dubai-d.jpg)
                             no-repeat center;
                           height: 230px;
                           background-size: cover;
                         "
                       >
-                        <span>San Francisco</span>
+                        <span>Dubai</span>
                       </div>
                     </a>
                   </div>
 
-                  <div class="col-lg-8 col-md-8 col-sm-12 mt-4">
-                    <a href="flights-to-las-vegas.html">
+                  
+                  <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
+                    <a href="/tours-turkey">
                       <div
                         class="popular-dest-box rounded"
                         style="
-                          background: url(newimages/thumb_204x204/las-vegas-sm-wide.webp)
+                          background: url(newimages/turkey-d.jpg)
                             no-repeat center;
                           height: 230px;
                           background-size: cover;
                         "
                       >
-                        <span>Las Vegas</span>
+                        <span>Turkey</span>
                       </div>
                     </a>
                   </div>
+
+                  
+                  <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
+                    <a href="/tours-bali">
+                      <div
+                        class="popular-dest-box rounded"
+                        style="
+                          background: url(newimages/bali-d.jpg)
+                            no-repeat center;
+                          height: 230px;
+                          background-size: cover;
+                        "
+                      >
+                        <span>Bali</span>
+                      </div>
+                    </a>
+                  </div>
+
 
                   <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-                    <a href="flights-to-los-angeles.html">
+                    <a href="/tours-singapore">
                       <div
                         class="popular-dest-box rounded"
                         style="
-                          background: url(newimages/thumb_204x204/los-angeles-sm.webp)
+                          background: url(newimages/singapore-d.jpg)
                             no-repeat center;
                           height: 230px;
                           background-size: cover;
                         "
                       >
-                        <span>Los Angeles</span>
+                        <span>Singapore</span>
                       </div>
                     </a>
                   </div>

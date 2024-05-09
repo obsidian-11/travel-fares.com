@@ -228,6 +228,15 @@ select {
   list-style: disc;
 }
 
+.popular-dest-box {
+  transition: transform 0.2s;
+}
+
+.popular-dest-box:hover {
+  transform: scale(1.06);
+  transition-duration: 0.2s;
+}
+
 @media only screen and (max-width: 768px) {
   #booking-form {
     width: 95vw;
