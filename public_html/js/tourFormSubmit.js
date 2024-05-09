@@ -24,7 +24,7 @@ const submitForm = () => {
   };
 
   if (formData) {
-    const url = "http://localhost/post";
+    const url = "/post";
     var form_data = new FormData();
 
     for (var key in formData) {
