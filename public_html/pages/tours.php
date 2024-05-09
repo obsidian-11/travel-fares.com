@@ -53,7 +53,7 @@ Tour Packages
                     <div class="price-section">
                         <h1><?php echo $tour->cost ?></h1>
                         <p>per person</p>
-                        <button onclick="toggleBookingForm()" class="btn btn-search btn-book-pkg">Book Now</button>
+                        <button onclick="toggleBookingForm(`<?php echo $tour->name ?>`)" class="btn btn-search btn-book-pkg">Book Now</button>
                     </div>
                 </div>
         </div>
@@ -68,8 +68,8 @@ Tour Packages
 
 <div id="booking-form" class="hide" >
     <div class="flex-row-space-between align-center">
-        <h1>Tour Package Name</h1>
-       <a onclick="toggleBookingForm()" href="javascript:;">
+        <h1 id="booking-heading">Tour Package Name</h1>
+       <a onclick="toggleBookingForm(null)" href="javascript:;">
        <svg  xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none">
             <path d="M16 8L8 16M8.00001 8L16 16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -1601,6 +1601,9 @@ Tour Packages
 <script>
     const tours = document.querySelectorAll(".tour-package");
     const body = document.querySelector("body")
+    const bookingFormPopup = document.querySelector("#booking-form")
+    const overlay = document.querySelector("#body-overlay");
+    const heading = document.querySelector("#booking-heading")
 
    const toggleVisibility = (id) => {
     const itinerary = tours[id-1].querySelector('.itinerary');
@@ -1614,14 +1617,15 @@ Tour Packages
     }
    }
 
-   const toggleBookingForm = (tourId, countrySlug) => {
-    const bookingFormPopup = document.querySelector("#booking-form")
-    const overlay = document.querySelector("#body-overlay");
+   const toggleBookingForm = (tourName) => {
+
 
     if(Array.from(bookingFormPopup.classList).includes("hide")){
+        console.log(tourName);
         bookingFormPopup.classList.remove("hide")
         overlay.classList.remove("hide")
         body.classList.add("noscroll")
+        heading.textContent = `Booking Form - ${tourName}`
 
     } else {
         document.querySelector("#booking-form>form").reset();
