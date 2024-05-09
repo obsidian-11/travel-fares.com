@@ -35,7 +35,7 @@ function sendFormDataOnEmail() {
         </head>
         <body>
             <h1>Submission Details</h1>
-            <p><strong>Selected Tour Package:</strong> '.$packageName.'</p>
+            <p><strong>Selected Tour Package:</strong> '.$tourPackage.'</p>
             <p><strong>Name:</strong> '.$name.'</p>
             <p><strong>Email:</strong> '.$email.'</p>
             <p><strong>Nationality:</strong> '.$nationality.'</p>
